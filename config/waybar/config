@@ -1,0 +1,150 @@
+[{
+	"layer": "top",
+	"output": ["DP-1"],
+	"modules-left": ["custom/launcher","tray"],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": ["gamemode","pulseaudio","network","custom/hyprconf","clock"],
+
+
+"custom/launcher":{
+    "tooltip": false,
+    "format": " ",
+    "on-click": "nwg-drawer -term kitty -i Papirus-Dark -c 7 -is 125 -spacing 30",	
+},
+
+"tray":{
+  	"icon-size":18,
+  	"spacing": 10,
+  	"show-passive-items": true,
+},
+
+"hyprland/workspaces": {
+		"format": "{name}",
+		"persistent_workspaces": {
+			"*": 7,
+		}
+},
+
+"gamemode": {
+   	"format": "{glyph}",
+   	"format-alt": "{glyph} {count}",
+   	"glyph": "",
+   	"hide-not-running": true,
+   	"use-icon": true,
+   	"icon-name": "input-gaming-symbolic",
+   	"icon-spacing": 4,
+  	"icon-size": 20,
+  	"tooltip": true,
+    "tooltip-format": "Games running: {count}"
+},
+
+"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 1,
+		"format": "{icon}{volume}%",
+		"format-muted": "{icon}{volume}%",
+		"format-icons": {
+		  "default": ["", "", ""]
+		}
+},
+
+"network": {
+    "interface": "enp7s0",
+    "format-ethernet": "󰈀 ",
+    "format-disconnected": "󰈂 ",
+    "tooltip-format-ethernet": "{ipaddr}/{cidr} 󰈀",
+    "tooltip-format-disconnected": "Disconnected", 
+},
+
+"custom/hyprconf":{
+  	"tooltip": false,
+    "format": "",
+  	"on-click": "neovide ~/.config/hypr/hyprland.conf",	
+},
+
+"clock": { 
+    "format": "{:%H:%M %d/%m/%Y}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+          "mode"          : "month",
+          "mode-mon-col"  : 3,
+          "weeks-pos"     : "right",
+          "on-scroll"     : 1,
+          "on-click-right": "mode",
+          "format": {
+                "months":     "<span color='#17d5d4'><b>{}</b></span>",
+                "days":       "<span color='#eeeeee'><b>{}</b></span>",
+                "weeks":      "<span color='#696969'><b>{:%W}</b></span>",
+                "weekdays":   "<span color='#0000dd'><b>{}</b></span>",
+                "today":      "<span color='#0000ff'><b><u>{}</u></b></span>"
+                    }
+                },
+    "actions":  {
+          "on-click-right": "mode",                   
+          "on-scroll-up": "shift_down",
+          "on-scroll-down": "shift_up"
+                }
+}
+},
+
+
+
+{
+	"layer": "top",
+	"output": ["DP-2"],
+	"position": "top",
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": ["gamemode","memory","cpu","custom/gpu"],
+	"modules-left": ["clock","pulseaudio"],
+
+
+"hyprland/workspaces": {
+  	"format": "{name}",
+		"persistent_workspaces": {
+  			"DP-2": [1,2,3,4,5],
+		}
+},
+
+"gamemode": {
+   	"format": "{glyph}",
+   	"format-alt": "{glyph} {count}",
+   	"glyph": "",
+   	"hide-not-running": true,
+   	"use-icon": true,
+   	"icon-name": "input-gaming-symbolic",
+   	"icon-spacing": 4,
+   	"icon-size": 20,
+   	"tooltip": true,
+  	"tooltip-format": "Games running: {count}"
+},
+	
+"memory": {
+    "interval": 30,
+    "format": " {}%",
+    "max-length": 10
+},
+
+"cpu": {
+    "interval": 15,
+    "format": " {}%",
+    "max-length": 10
+},
+
+"custom/gpu": {
+  	"exec": "cat /sys/class/drm/card1/device/gpu_busy_percent",
+	  "format": " {}%",
+  	"return-type": "",
+  	"interval": 2
+},
+
+"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 1,
+		"format": "{icon}{volume}%",
+		"format-muted": "{icon}{volume}%",
+		
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+}
+}]
