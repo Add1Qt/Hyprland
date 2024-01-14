@@ -1,0 +1,97 @@
+* {
+  transition: 0.2s;
+}
+
+
+window {
+    margin: 0px;
+    border: 2px solid rgba(0, 0, 255, 0.7);
+/*
+    background-color: #161925;
+*/
+    background-color: rgba(0, 0, 0, 0.9);    
+    border-radius: 12px;
+}
+
+#input {
+    padding: 2px;
+    margin: 12px;
+    margin-top: 15px;
+    padding-left: 10px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(105deg, #101010 0%, #000085 80%);
+   	outline: none;
+    border-radius: 12px;
+}
+
+#input image {
+    color: #fff;
+}
+
+#input:focus {
+    border: none;
+   	outline: none;
+}
+
+#inner-box {
+    margin: 12px;
+    margin-top: 0px;
+    border: none;
+    color: #00ffff;
+    border-radius: 16px;
+}
+
+#inner-box * {
+    transition: none;
+}
+
+#outer-box {
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    border-radius: 16px;
+}
+
+#scroll {
+    margin-top: 5px;
+    border: none;
+    border-radius: 16px;
+    margin-bottom: 5px;
+}
+
+#text:selected {
+    color: #00ffff;
+    font-weight: bold;
+}
+
+#img {
+    margin-right: 20px;
+    background: transparent;
+}
+
+#text {
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    background: transparent;
+}
+
+#entry {
+    margin: 0px;
+    border: none;
+    border-radius: 16px;
+    background-color: transparent;
+    min-height:32px;
+    font-weight: bold;
+}
+
+#entry:selected {
+    outline: none;
+    margin-left: 20px;
+    margin-right: 0px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(105deg, #000000 25%, #00cccc 100%);
+}
