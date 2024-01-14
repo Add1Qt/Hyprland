@@ -7,7 +7,7 @@
 - 📝 [Neovim](https://neovim.io/)
   - 💪 [NvChad](https://nvchad.com/)
 - 🍫 [Waybar](https://github.com/Alexays/Waybar)
-- 🚀 Wofi
+- 🚀 [NWG-Drawer](https://github.com/nwg-piotr/nwg-drawer) & Wofi
 - 🗣️ [Dunst](https://github.com/dunst-project/dunst)
 - 📊 [Btop](https://github.com/aristocratos/btop)
 - 🦊 [Firefox](https://www.mozilla.org/sv-SE/firefox/)
