@@ -13,3 +13,4 @@
 - 🦊 [Firefox](https://www.mozilla.org/sv-SE/firefox/)
 
 ## Screenshots
+![Screenshot](/screenshot.png)
