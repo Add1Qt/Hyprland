@@ -1,6 +1,6 @@
 # [Hyprland](https://hyprland.org/)
 
-## Overview
+## Utilities
 - 🐱 [Kitty](https://sw.kovidgoyal.net/kitty/)
 - 📁 [Nemo](https://github.com/linuxmint/nemo)
   - 🫐 [Material-Black-Blueberry](https://www.gnome-look.org/p/1316887)
