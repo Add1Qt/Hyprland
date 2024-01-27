@@ -11,6 +11,7 @@
 - 🗣️ [Dunst](https://github.com/dunst-project/dunst)
 - 📊 [Btop](https://github.com/aristocratos/btop)
 - 🦊 [Firefox](https://www.mozilla.org/sv-SE/firefox/)
+- 📸 [Hyprshot](https://github.com/Gustash/Hyprshot)
 
 ## Screenshots
 ![Screenshot](/screenshot.png)
