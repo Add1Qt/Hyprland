@@ -17,6 +17,6 @@
 - 📸 [Hyprshot](https://github.com/Gustash/Hyprshot)
 
 ## Screenshots
-![Screenshot](/screenshot.png)
-![Screenshot](/screenshot2old.png)
-![Screenshot](/screenshot3.png)
+![Screenshot](screenshot.png)
+![Screenshot](screenshot2.png)
+![Screenshot](screenshot3.png)
