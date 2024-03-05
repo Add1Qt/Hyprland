@@ -18,5 +18,5 @@
 
 ## Screenshots
 ![Screenshot](/screenshot.png)
+![Screenshot](/screenshot2old.png)
 ![Screenshot](/screenshot3.png)
-![Screenshot](/screenshot2.png)
